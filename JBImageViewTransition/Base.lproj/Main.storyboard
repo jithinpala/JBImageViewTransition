@@ -1,13 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JBImageViewTransition" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +16,37 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fka-Ic-CsT" customClass="JBTransitionView" customModule="JBImageViewTransition" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4W-q9-Xqz">
+                                <rect key="frame" x="500" y="550" width="80" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="CQU-D8-pDf"/>
+                                    <constraint firstAttribute="height" constant="30" id="DDI-jV-S4K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopAnimationButtonTapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bc4-NM-ygL"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="n4W-q9-Xqz" secondAttribute="trailing" constant="20" id="5Xm-zS-lGQ"/>
+                            <constraint firstAttribute="trailing" secondItem="fka-Ic-CsT" secondAttribute="trailing" id="EKl-lK-6fJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="n4W-q9-Xqz" secondAttribute="bottom" constant="20" id="TAI-iz-tRu"/>
+                            <constraint firstItem="fka-Ic-CsT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Wk2-ZF-5cY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fka-Ic-CsT" secondAttribute="bottom" id="jeN-6k-8em"/>
+                            <constraint firstItem="fka-Ic-CsT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="q7V-jq-ido"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageTransitionView" destination="fka-Ic-CsT" id="hw1-KI-69v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
