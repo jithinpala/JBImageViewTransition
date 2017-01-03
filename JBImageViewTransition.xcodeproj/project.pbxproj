@@ -71,7 +71,7 @@
 			children = (
 				928A20F31E1B698D00701DF1 /* Screen shot */,
 				927339F21E16449400B91721 /* Images */,
-				927339EF1E16159100B91721 /* Classes */,
+				927339EF1E16159100B91721 /* Source */,
 				927339DD1E16151600B91721 /* AppDelegate.swift */,
 				927339DF1E16151600B91721 /* ViewController.swift */,
 				927339E11E16151600B91721 /* Main.storyboard */,
@@ -82,12 +82,12 @@
 			path = JBImageViewTransition;
 			sourceTree = "<group>";
 		};
-		927339EF1E16159100B91721 /* Classes */ = {
+		927339EF1E16159100B91721 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				927339F01E1615DD00B91721 /* JBTransitionView.swift */,
 			);
-			name = Classes;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		927339F21E16449400B91721 /* Images */ = {
@@ -98,7 +98,7 @@
 				92A421211E1A215500231CF3 /* image3.jpg */,
 				92A421221E1A215500231CF3 /* image4.jpg */,
 			);
-			name = Images;
+			path = Images;
 			sourceTree = "<group>";
 		};
 		928A20F31E1B698D00701DF1 /* Screen shot */ = {
@@ -106,7 +106,7 @@
 			children = (
 				928A20F41E1B6D0300701DF1 /* transition.gif */,
 			);
-			name = "Screen shot";
+			path = "Screen shot";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
