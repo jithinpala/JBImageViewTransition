@@ -1,6 +1,6 @@
-![JBImageViewTransition](https://github.com/jithinpala/JBImageViewTransition/blob/master/JBImageViewTransition/Screen%20shot/transition.gif)
-
-
+<p align="center" >
+    <img src="/JBImageViewTransition/Screen shot/transition.gif" title="Title image" float=center width=300>
+</p>
 
 ## Description
 
