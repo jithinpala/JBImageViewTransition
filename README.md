@@ -18,15 +18,35 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'JBImageViewTransition'
 ```
-### Manually
 
-If you prefer not to use either of the aforementioned dependency managers, you can integrate JBImageViewTransition into your project manually.
 
 ## Usage
 
+**Using Storyboard / Interface Builder**
+* Drag a UIView to Storyboard or Interface Builder, change its class to **JBTransitionView**
+* Create IBOutlet for **JBTransitionView**
+
 ```Swift
-import LUExpandableTableView
+    @IBOutlet weak var imageTransitionView: JBTransitionView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
+        //***** Configure image transition animation *****//
+        imageTransitionView.setAnimationImages(NSArray(objects: "image1.jpg","image2.jpg","image3.jpg","image4.jpg"))
+        imageTransitionView.animationFromAllSide = true
+        imageTransitionView.animationDuration = 3
+        imageTransitionView.startJNImageAnimation()
+    }
+    
 ```
+
+### Manually
+
+If you prefer not to use either of the aforementioned dependency managers, you can integrate JBImageViewTransition into your project manually.
+Drag the JBTransitionView.swift from source folder.
+
 
 ### Attributes you can set
 
