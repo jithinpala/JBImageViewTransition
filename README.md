@@ -1,4 +1,4 @@
-![JBImageViewTransition](https://github.com/jithinpala/JBImageViewTransition/blob/master/JBImageViewTransition/transition.gif)
+![JBImageViewTransition](https://github.com/jithinpala/JBImageViewTransition/blob/master/JBImageViewTransition/Screen%20shot/transition.gif)
 
 
 
