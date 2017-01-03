@@ -5,7 +5,7 @@
 ## Description
 
 
-**JBImageViewTransition** is for ios on Swift. It's an awose utility for UIImage transition
+**JBImageViewTransition** is for ios on Swift. It's an awesome utility for UIImage transition
 
 
 ## Installation
